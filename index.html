@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching JSON data from external API</title>
+    <style>
+
+        h1,h3,h5 {
+            text-align: center;
+        }
+
+        .btn-align {
+            display: flex;
+            justify-content: center;
+        }
+       
+        .user {
+            display: flex;
+          flex-direction: column;
+          align-items: center;
+            background: #A4B0BD;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .user li {
+            list-style: none;
+        }
+
+        .note {
+           text-align: center;
+           max-width: 200ch;
+           color: indianred;
+           font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetching data from External API in the form of JSON and Displaying on the webpage</h1>
+    <div class="btn-align">
+    <button id="btn">Load My github Followers</button>
+</div>
+
+<p class="note">In case you get 403 limit error then I haven't authorized my account to access tokens but you can do that just go to github settings and get tokens. Instead of my followers url paste the tokens</p>
+
+    <h3>Followers</h3>
+    <div id="followers">
+
+    </div>
+
+    <h5 id="error"><h5>
+    <h5>Demo by: Ali Dhuniya while learning Consuming API</h5>
+    <script src="main.js"></script>
+</body>
+</html>
